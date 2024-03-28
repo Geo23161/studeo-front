@@ -13,7 +13,7 @@
                 </div>
                 <input class="inpt" v-model="search_w" placeholder="Rechercher..." />
             </div>
-            <ion-segment v-show="!is_charging" :mode="'md'" :value="typseg" @ionChange="e => typseg = e.detail.value" >
+            <ion-segment v-show="!is_charging" :mode="'md'" :value="typseg" @ionChange="e => typseg = e.detail.value as any" >
                 <ion-segment-button value="aides">
                     <ion-label> Aides pour Cours/Exercices </ion-label>
                 </ion-segment-button>

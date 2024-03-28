@@ -343,7 +343,7 @@ const medias = computed(() => {
     return med
 })
 
-const previews = ref<blob[]>([])
+const previews = ref<Blob[]>([])
 
 const set_previews = (e : any) => {
 	const files = [] as any[]
@@ -353,7 +353,7 @@ const set_previews = (e : any) => {
 	    }
 	for (let i = 0; i < files.length; i++) {
             extract_frames(files[i], (b) => {
-            	previews.value.push(b)
+            	previews.value.push(b as Blob)
             	charg_file(e)
             })
             

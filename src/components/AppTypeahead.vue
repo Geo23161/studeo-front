@@ -14,7 +14,7 @@
     <ion-content  color="light" class="ion-padding">
         <ion-list :mode="'ios'" id="modal-list" :inset="true">
 
-            <ion-item v-for="item in [ {id : 0, name : 'Tout', slug : ''}, ...filteredItems]" :key="item.slug">
+            <ion-item v-for="item in [ {id : 0, name : 'Tout', slug : ''}, ...(filteredItems as any[])]" :key="item.slug">
                 <ion-checkbox :value="item.slug" :checked="isChecked(item.slug)" @ionChange="checkboxChange($event)">{{
                     item.name }}</ion-checkbox>
             </ion-item>
@@ -61,7 +61,7 @@ export default defineComponent({
         IonToolbar,
     },
     setup(props, { emit }) {
-        const filteredItems = ref([...props.items]);
+        const filteredItems = ref([...(props.items as unknown[])]);
         const workingSelectedValues = ref(props.selectedItem);
 
         const isChecked = (value: string) => {
@@ -92,7 +92,7 @@ export default defineComponent({
              * return all options.
              */
             if (searchQuery === undefined) {
-                filteredItems.value = [...props.items];
+                filteredItems.value = [...(props.items as unknown[])];
             } else {
                 /**
                  * Otherwise, normalize the search
@@ -100,7 +100,7 @@ export default defineComponent({
                  * contain the search query as a substring.
                  */
                 const normalizedQuery = searchQuery.toLowerCase();
-                filteredItems.value = props.items.filter((item : any) => {
+                filteredItems.value = (props.items as unknown[]).filter((item : any) => {
                     return item.text.toLowerCase().includes(normalizedQuery);
                 });
             }
