@@ -1,0 +1,8 @@
+{
+  "name": "Studeo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite",
+  "id": "9b58a86d"
+}
