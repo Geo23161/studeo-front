@@ -957,7 +957,7 @@
 </style>
 
 <script setup lang="ts">
-import { IonActionSheet, IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonRippleEffect, IonIcon, ActionSheetButton, onIonViewDidEnter } from '@ionic/vue';
+import { IonActionSheet, IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonRippleEffect, IonIcon, ActionSheetButton, onIonViewDidEnter, IonSkeletonText } from '@ionic/vue';
 import DiviseComp from "@/components/DiviseComp.vue"
 
 import { search, settings, mic, ellipsisVertical, ellipsisVerticalOutline, chevronForward, helpCircle, play, checkmarkCircle, time, eye, pencil, person, book, compass, sparkles } from 'ionicons/icons';
