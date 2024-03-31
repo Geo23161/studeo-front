@@ -62,7 +62,7 @@
                   }">
                   </div>
 
-                  <div v-if="aide.video.length" class="qh_img img_all" :style="{
+                  <div v-else-if="aide.video.length" class="qh_img img_all" :style="{
                     backgroundImage: `url('${aide.video[0].get_preview}')`
                   }">
                     <button class="play_but">
@@ -70,7 +70,7 @@
                     </button>
                   </div>
 
-                  <div v-if="aide.audio.length" @click.stop style="margin-top: -.7rem;">
+                  <div v-else-if="aide.audio.length" @click.stop style="margin-top: -.7rem;">
                     <audio-reader :size="aide.audio[0].size" :url="aide.audio[0].get_file" />
                   </div>
 
@@ -178,7 +178,7 @@
                   }">
                   </div>
 
-                  <div v-if="aide.video.length" class="qh_img img_all" :style="{
+                  <div v-else-if="aide.video.length" class="qh_img img_all" :style="{
                     backgroundImage: `url('${aide.video[0].get_preview}')`
                   }">
                     <button class="play_but">
@@ -186,7 +186,7 @@
                     </button>
                   </div>
 
-                  <div v-if="aide.audio.length" @click.stop style="margin-top: -.7rem;">
+                  <div v-else-if="aide.audio.length" @click.stop style="margin-top: -.7rem;">
                     <audio-reader :size="aide.audio[0].size" :url="aide.audio[0].get_file" />
                   </div>
 
@@ -285,7 +285,7 @@
                   }">
                   </div>
 
-                  <div v-if="aide.video.length" class="qh_img img_all" :style="{
+                  <div v-else-if="aide.video.length" class="qh_img img_all" :style="{
                     backgroundImage: `url('${aide.video[0].get_preview}')`
                   }">
                     <button class="play_but">
@@ -293,7 +293,7 @@
                     </button>
                   </div>
 
-                  <div v-if="aide.audio.length" @click.stop style="margin-top: -.7rem;">
+                  <div v-else-if="aide.audio.length" @click.stop style="margin-top: -.7rem;">
                     <audio-reader :size="aide.audio[0].size" :url="aide.audio[0].get_file" />
                   </div>
 

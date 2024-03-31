@@ -29,9 +29,9 @@
 
             <div class="serif" id="aides_cont" v-show="typseg == 'aides'"
                 style="max-height: 100%; overflow-y: scroll; padding-bottom: 12rem;">
-                <div @click="fOpen = true" class="filter_cont ">
+                <div class="filter_cont ">
 
-                    <div class="filter ion-activatable ripple-parent">
+                    <div @click="fOpen = true" class="filter ion-activatable ripple-parent">
                         <ion-ripple-effect></ion-ripple-effect>
                         <div>
                             {{ filter_name }}
@@ -111,9 +111,9 @@
 
             <div id="conseils_cont" class="serif" v-show="typseg == 'conseils'"
                 style="max-height: 100%; overflow-y: scroll; padding-bottom: 12rem;">
-                <div @click="fOpen = true" class="filter_cont ">
+                <div  class="filter_cont ">
 
-                    <div class="filter ion-activatable ripple-parent">
+                    <div @click="fOpen = true" class="filter ion-activatable ripple-parent">
                         <ion-ripple-effect></ion-ripple-effect>
                         <div>
                             {{ filter_name }}
@@ -189,9 +189,9 @@
 
             <div class="serif" id="fichiers_cont" v-show="typseg == 'fichiers'"
                 style="max-height: 100%; overflow-y: scroll; padding-bottom: 12rem;">
-                <div @click="fOpen = true" class="filter_cont ">
+                <div  class="filter_cont ">
 
-                    <div class="filter ion-activatable ripple-parent">
+                    <div @click="fOpen = true" class="filter ion-activatable ripple-parent">
                         <ion-ripple-effect></ion-ripple-effect>
                         <div>
                             {{ filter_name }}
