@@ -1,4 +1,4 @@
-![Screenshot_20240314-171118_Studeo](https://github.com/user-attachments/assets/fdef25e6-8ed3-40b1-8ef9-4fcf38d3ba48)# Studeo
+# Studeo
 
 ## Description
 Studeo est une plateforme d'apprentissage en ligne spécialement conçue pour accompagner les étudiants dans leur parcours académique. Elle propose une vaste banque de ressources pédagogiques, incluant des exercices, des explications détaillées et des conseils adaptés à chaque niveau d'étude.
